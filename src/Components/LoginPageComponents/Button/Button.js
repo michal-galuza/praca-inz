@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Button = ({buttonText , type}) => {
-    
-    
+const Button = ({buttonText , type , className}) => {
+
+
     return(
-    type ? <button type={type}>{buttonText}</button> : <button type="button">{buttonText}</button>
+    type ?
+     <button className={className} type={type}>{buttonText}</button> 
+     : 
+    <button className={className} type="button">{buttonText}</button>
 
 );
 }

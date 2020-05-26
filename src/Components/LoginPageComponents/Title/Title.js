@@ -2,8 +2,8 @@ import React from 'react';
 import {H1} from './TitleStyled';
 
 
-const Title= ({title}) => (
-<H1>{title}</H1>
+const Title= ({title , className}) => (
+<H1 className={className}>{title}</H1>
 );
 
 export default Title;
