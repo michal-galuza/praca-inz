@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Input from '../Components/LoginPageComponents/Input/Input';
+
 
 export const Wrapper = styled.div`
 width:100vw;
@@ -10,9 +10,5 @@ grid-template-areas:
 "email"
 "password"
 "submit";
-grid-template-rows: 100px 1fr 1fr 1fr;
-`;
-export const Email= styled(Input)`
-grid-area: password;
-background: pink;
+grid-template-rows: 100px 1fr 1fr 1fr; 
 `;
