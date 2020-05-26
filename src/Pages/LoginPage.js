@@ -8,6 +8,7 @@ const LoginPage = ()=>{
   
   return(
       <Wrapper>
+      
 
     <Title title="JavaScript ty śmieciu "/>
     <Email placeholder="emial"/>
