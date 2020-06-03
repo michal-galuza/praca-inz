@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Input from '../Components/LoginPageComponents/Input/Input';
-import Button from '../Components/LoginPageComponents/Button/Button';
-import Title from '../Components/LoginPageComponents/Title/Title';
+import Input from '../../Components/LoginPageComponents/Input/Input';
+import Button from '../../Components/LoginPageComponents/Button/Button';
+import Title from '../../Components/LoginPageComponents/Title/Title';
 
 
 //Root container
@@ -30,30 +30,34 @@ align-content: flex-start;
 justify-items:center;
 align-items:center;
 `;
-/*export const TextWrapper=styled.div`
-grid-area: TextWrapper;
-width:100%;
-height:100%;
-display:flex;
-justify-items:center;
-align-items:center;
-`; */
+
 export const InputsWrapper= styled.div`
 width: 100%;
-height: 50%;
+height: 100%;
 grid-area: loginPanel;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-
+flex-wrap: wrap-reverse;
 `;
+//Name wrapper //
+export const InputsWrapperName=styled.div`
+height: 14%;
+width: 55% ;
+display:flex;
+justify-content: space-between;
+align-items:center;
+background:transparent;
+`;
+
 export const LinkWrapper=styled.div`
 grid-area: links;
-width: 70%;
+padding:10px ;
+width: 100%;
 height: 100%;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: flex-start;
 `;
 
@@ -82,9 +86,9 @@ color: white;
 font-size: 5em;
 padding: 0 10px 0 0;
 `;
-export const Email = styled(Input)`
-height: 31%;
-width:  40%;
+export const InputStyled = styled(Input)`
+height: ${(props)=> props.name ? `100%` : `14%`};
+width: ${(props)=> props.name ? `49%` : `55%`} ;
 border-radius: 10px;
 border: none;
 ::placeholder{
@@ -96,21 +100,10 @@ justify-content: center;
     border: 2px solid gray;
 }
 `;
-export const Password = styled(Input)`
-height: 31%;
-width:  40%;
-border-radius: 10px;
-border: none;
-::placeholder{
-text-align:center;
-}
-:focus{
-    border: 2px solid gray;
-}
-`;
+
 export const Submit=styled(Button)`
-height: 27%;
-width:  40%;
+height: 14%;
+width:  55%;
 border-radius: 10px;
 border: none;
 background: #4B597A;
@@ -123,7 +116,7 @@ cursor: pointer;
     transform: scale(1.1);
 }
 `;
-export const SignUpButton=styled(Button)`
+export const SignInButton=styled(Button)`
 top: 20px;
 right:20px;
 position:absolute;
@@ -154,13 +147,5 @@ cursor: pointer;
     text-decoration: underline;
 }
 `;
-export const Forgot =styled.a`
-font-size: 1.1em;
-color: #4B597A;
-cursor: pointer;
-:hover{
-    color: black;
-    text-decoration: underline;
-}
-`;
+
 

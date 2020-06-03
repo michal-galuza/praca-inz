@@ -1,11 +1,23 @@
 import React from 'react';
-import LoginPage from './Pages/LoginPage';
-
-
+import LoginPage from './Pages/Home/LoginPage';
+import SignUpPage from './Pages/SignUp/SignUp';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Select from './Components/LoginPageComponents/Select/Select';
 
 function App() {
   return (
- <LoginPage/>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={LoginPage}/>
+        <Route exact path="/SignUp" component={SignUpPage}/>
+      </Switch>
+
+    </Router>
+
   );
 }
 
