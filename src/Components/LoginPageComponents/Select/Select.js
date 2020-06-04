@@ -15,7 +15,7 @@ const Select = () => {
     }
     return (
         <Wrapper>
-        <P>Data urodzenia</P>
+        <P>Enter yout birthday date</P>
 <SelectInput>
 <Option value="years" disabled  selected>years </Option>
     {year.map((item , key)=><Option key={key} value={item}>{item}</Option>)}

@@ -12,7 +12,8 @@ import {Wrapper ,
      InputsWrapper ,
      LinkWrapper,
      SignInButton,
-     InputsWrapperName } from './SignUpStyled';
+     InputsWrapperName,
+    LinkTo } from './SignUpStyled';
 //Inputy  imie nazwisko
 //2 x password
 //mail
@@ -26,7 +27,7 @@ const SignUpPage =()=>{
     console.log(date);
     return (
         <Container>
-            <SignInButton buttonText="Sign in" />
+            <LinkTo to="/"><SignInButton buttonText="Sign in"/></LinkTo>
 
                 <Wrapper>
 
@@ -46,7 +47,7 @@ const SignUpPage =()=>{
             </InputsWrapper>
 
             <LinkWrapper>
-                <A>Already got an account?<SignUp> Sign in!</SignUp></A>
+                <A>Already got an account?<LinkTo to="/"><SignUp> Sign in!</SignUp></LinkTo></A>
 
             </LinkWrapper>
 

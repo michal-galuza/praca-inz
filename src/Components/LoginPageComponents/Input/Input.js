@@ -3,8 +3,8 @@ import {InputStyled} from './InputStyled';
 
 
 
-const Input=({placeholder , className , type})=>(
-    <InputStyled type={type?"password": "text"} className={className} placeholder={placeholder}/>
+const Input=({placeholder , className , type , fn})=>(
+    <InputStyled onChange={fn}  name={placeholder} id={placeholder} type={type?"password": "text"} className={className} placeholder={placeholder}/>
 
 
 

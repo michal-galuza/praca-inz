@@ -6,11 +6,10 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Select from './Components/LoginPageComponents/Select/Select';
 
 function App() {
   return (
-    <Router>
+    <Router >
       <Switch>
         <Route exact path="/" component={LoginPage}/>
         <Route exact path="/SignUp" component={SignUpPage}/>

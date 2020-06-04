@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-//max 4 const w stylach bez propsów 
+//max 4 const w stylach bez propsów
 
 //!!!!!!!!!!!!!!!!!!
 //  ZAPISYWAĆ KURWA MAĆ
@@ -10,33 +10,34 @@ import styled from 'styled-components';
 //ZAPAMIĘTAJ KURDE
 //stworzyć zmienną exportowaną
 //zaimporotwać
-//WYKORZYSTAĆ 
+//WYKORZYSTAĆ
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 export const Wrapper = styled.div`
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
     height: 14%;
     width: 55%;
-    
-    
+    border-radius: 10px;
+
 `;
 export const P = styled.p`
-    color: white;
-    
+color: white;
+width:100%;
+text-align: center;
 `;
 export const SelectInput = styled.select`
-    height: 70%;
-    width: calc(100% / 3);
+    height: 50%;
+    width: 32%;
     border-radius: 10px;
     border: none;
     color: gray;
-
-
-
+    
 `;
 export const Option = styled.option`
 background: #4B597A;
 color: white;
 border: 4px solid #7D6592;
 cursor: pointer;
-
 `;

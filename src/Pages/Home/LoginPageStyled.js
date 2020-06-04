@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Input from '../../Components/LoginPageComponents/Input/Input';
 import Button from '../../Components/LoginPageComponents/Button/Button';
 import Title from '../../Components/LoginPageComponents/Title/Title';
-
+import {Link} from 'react-router-dom';
 
 //Root container
 export const Container = styled.div`
@@ -38,7 +38,7 @@ display:flex;
 justify-items:center;
 align-items:center;
 `; */
-export const InputsWrapper= styled.div`
+export const InputsWrapper= styled.form`
 width: 100%;
 height: 50%;
 grid-area: loginPanel;
@@ -163,4 +163,7 @@ cursor: pointer;
     text-decoration: underline;
 }
 `;
+export const LinkTo =styled(Link)`
+ text-decoration: none;
 
+`;
